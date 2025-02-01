@@ -341,15 +341,7 @@ footer{
     width: 100%;
     bottom: 0%;
 }
-/*footer {
-    flex-shrink: 0;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
-    width: 100%;
-}*/
+
 footer .footer_main{
     width:100%;
     background : #f3f4f3;
