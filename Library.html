@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Leyli Bayramova">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body> <!--Home-->
+    <section>
+        <video id="background-video" autoplay loop muted poster="C:\Users\Windows 10\Downloads\file.mp4">
+            <source src="C:\Users\Windows 10\Downloads\file.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <div class="logo">
+                <h1>Online Library</h1>
+            </div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Books">Books</a></li>   
+                <li><a href="#AboutUs">About Us</a></li> 
+            </ul>
+
+            <div class="icons">
+                <i class="fa-solid fa-language"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-person"></i>
+            </div>
+        </nav>
+        <div class="main" id="Home">
+            <div class="main_content">
+                <div class="main_text">
+                    <h1>Welcome to Online<br><span><i>Library</i></span></h1>
+                    <p></p>
+                </div>
+                <div class="form-container">
+                    <form action="action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <img src="C:\Users\Windows 10\Downloads\male.jpg" alt="Avatar" class="avatar">
+                        </div>
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <button type="submit">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <div class="container" style="background-color:#f1f1f100">
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                            <span class="sgn">or <a href="#">Sign in</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="social_icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="button">
+                <a href="#">Get Books</a>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </section>
+
+    <!--Books-->
+    <section>
+<div class="Books" id="Books" style="background-color:antiquewhite">
+    <h1>Books</h1>
+
+    <div class="box">
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\theFaultInOurStars.jpg">
+            </div>
+            <div class="books text">
+                <h2>The Fault In Our Stars - John Green</h2>
+            </div>
+         
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+   
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\Book2.jpg">
+            </div>
+            <div class="books text">
+                <h2>Five Feet Apart - Rachale Lippincott</h2>
+                </div>
+          
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+   
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\book3.jpg">
+            </div>
+            <div class="books text">
+                <h2>Midnight Sun - Stephenie Meyer</h2>
+                </div>
+           
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+   
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\book4.jpg">
+            </div>
+            <div class="books text">
+                <h2>My Fault - Mercedes Ron</h2>
+                </div>
+           
+            
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\book5.jpg">
+            </div>
+            <div class="books text">
+                <h2>After We Collided - Anna Todd</h2>
+                </div>
+            
+           
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+   
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\book6.jpg">
+            </div>
+            <div class="books text">
+                <h2>Sherlock Holmes - Sir Arthur Conan Doyle</h2>
+                </div>
+            
+          
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\Book7.jpg">
+            </div>
+            <div class="books text">
+                <h2>Midnight Library - Matt Haig</h2>
+            </div>
+           
+            
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\Book8.jpg">
+            </div>
+            <div class="books text">
+                <h2>Harry Potter and the Philosopher Stone - J.K. Rowling</h2>
+            </div>
+           
+            
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\Book9.jpg">
+            </div>
+            <div class="books text">
+                <h2>Looking For Alaska - John Green</h2>
+            </div>
+           
+           
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\Book10.jpg">
+            </div>
+            <div class="books text">
+                <h2>Paper Towns - John Green</h2>
+                </div>
+            
+          
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+<div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\Book11.jpg">
+            </div>
+            <div class="books text">
+                <h2>The Queen Of Nothing - Holy Black</h2>
+                </div>
+          
+           
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\Book12.jpg">
+            </div>
+            <div class="books text">
+                <h2>Alice in Wonderland Through the Looking Glass - Lewis Carrol</h2>
+            </div>
+           
+           
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\Book13.jpg">
+            </div>
+            <div class="books text">
+                <h2>Fantastic Beasts: The Crimes of Grindelwald - J.K. Rowling </h2>
+             </div>
+            
+            
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\Book14.jpg">
+            </div>
+            <div class="books text">
+                <h2>War and Paece - Leo Tolstoy</h2>
+                </div>
+           
+            
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\Book15.jpg">
+            </div>
+            <div class="books text">
+                <h2>Love and Other Words - Christina Lauren</h2>
+               </div>
+           
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <div class="small_card"> 
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Windows 10\Downloads\Book16.jpg">
+            </div>
+            <div class="books text">
+                <h2>Maybe in Another Life - Taylor Jenkins Reid</h2>
+            </div>
+            
+            
+            <div class="book_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+</div>
+</section>
+
+<!--Footer-->
+<footer>
+    <div class="footer_main" id="AboutUs">
+        <div class="tag">
+            <h1>Contact</h1>
+            <a href="#"><i class="fa-solid fa-house"></i>123/Ankara/Turkey</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>+90 501 049 0824</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>exampl123@gmail.com</a>
+        </div>
+        <div class="tag">
+            <h1>Get Help</h1>
+            <a href="#" class="center">FAQ</a>
+        </div>
+        <div class="tag">
+            <h1>Follow Us</h1>
+            <div class="social_link">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="tag">
+            <h1>Newsletter</h1>
+            <div class="search_bar">
+                <input type="text" placeholder="Email id here">
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

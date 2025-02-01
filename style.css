@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba (0,0,0,0.25);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(to top, #874a4a, #4f2929);
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+section .main{
+    height: 750px;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    width: 100%;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 8px 15px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #359a758f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 30%;
+    border-radius: 40%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 10px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 10px;
+}
+span.sgn {
+    float: right;
+    padding-bottom: 30px;
+    padding-left: 250px;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 100px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 50%;
+    }
+}
+
+/* Flexbox container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-top: 100px; /* Adjust this value to move the form lower */
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (max-width: 750px) {
+    #background-video {
+        display: none;
+    }
+    body {
+        background: url("C:\Users\Windows 10\Downloads\file.mp4") no-repeat;
+        background-size: cover;
+    }
+}
+
+section nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+section nav .logo {
+    font-size: 35px;
+    color: #874a4a;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    left: -4%;
+}
+
+section nav ul li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+section nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+section nav ul li a:hover {
+    color: #874a4a;
+}
+
+section nav .icons i {
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+section nav .icons i:hover {
+    color: #874a4a;
+}
+
+section .main .main_content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adjusted to center the content */
+}
+
+section .main .main_content .main_text {
+    margin-right: 40px; /* Added to separate the text and form */
+}
+
+section .main .main_content .main_text h1 {
+    font-size: 90px;
+    line-height: 70px;
+    font-family: fantasy;
+    background: linear-gradient(to right, #874a4a, #5c2c2c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 45px;
+    left: 5px;
+}
+
+section .main .main_content .main_text h1 span {
+    font-size: 70px;
+    background: linear-gradient(to right, #874a4a, #5c2c2c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section .main .social_icon{
+    position: absolute;
+    top: 80%;
+    left:90%;
+    font-size: 19px;
+
+}
+section .main .social_icon i{
+    margin: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+section .main .social_icon i:hover{
+color:#874a4a;
+}
+section .main .button{
+    position: absolute;
+    left: 6%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #874a4a, #5c2c2c);
+}
+section .main .button a{
+color:#ccc;
+text-decoration: none;
+}
+section .main .button i{
+    color: white;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+section .main .button:hover i{
+transform: translateX(6px);
+}
+/*Books*/
+.Books{
+    width: 100%;
+    height:140hv;
+    padding:25px 0;
+}
+.Books h1{
+    margin: 35px 0;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform:uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to right, #b15e5e, #4f2929);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Books .box{
+    width:90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:25px 0;
+}
+.Books .box .card{
+    width: 290px;
+    height: 440px;
+    box-shadow: 0 0 8px #5c2c2c;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+}
+.Books .box .card .small_card{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 0;
+    transform: translateX(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+.Books .box .card:hover .small_card{
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+.Books .box .card .image{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.Books .box .card .image img{
+    width: 150px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+.Books .box .card:hover .image img{
+transform: scale(1.1);
+}
+.Books .box .card .small_card i{
+    width: 45px;
+    height:45px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px 0;
+    line-height: 40px;
+    border: 2px solid #999999;
+    transition: 0.2s;
+
+}
+.Books .box .card .small_card i:hover{
+color: #874a4a;
+}
+
+.Books .box .card .books text h2{
+font-size: 30px;
+margin-top: 15px;
+}
+.Books .box .card .btn{
+    text-decoration:none;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #673d3d, #5c2c2c);
+    color: #f1f1f1;
+}
+
+.Books .box .card .book_stars{
+    color: orange;
+    margin-bottom: 19px;
+    cursor: pointer;
+    }
+    
+/*Footer*/
+footer{
+    width: 100%;
+    bottom: 0%;
+}
+/*footer {
+    flex-shrink: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}*/
+footer .footer_main{
+    width:100%;
+    background : #f3f4f3;
+    display:flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag .center{
+    text-align: center;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #561515;
+}
+footer .footer_main .tag a{
+    display: block;
+    color: #080808;
+    text-decoration: none;
+    margin: 9px 0;
+}
+
+footer .footer_main .tag a i{
+    padding: 0 10px;
+    transition: 0.3s;
+
+}
+footer .footer_main .tag a i:hover{
+    color: #874a4a;
+}
+footer .footer_main .tag .social_link{
+    display: flex;
+}
+footer .footer_main .tag .social_link a{
+width: 30px;
+height: 30px;
+border-radius: 40%;
+text-align: center;
+text-decoration: none;
+color:#080808;
+box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+position: relative;
+margin: 0 5px;
+z-index: 10;
+overflow: hidden;
+}
+footer .footer_main .tag .social_link a .fa-brands{
+    font-size: 15px;
+    line-height: 30px;
+    z-index: 10;
+    position: relative;
+    transition: 0.5s;
+}
+footer .footer_main .tag .social_link a:hover i{
+    color: white;
+}
+footer .footer_main .tag .social_link a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -90px;
+    background: linear-gradient(-45deg, #d55a5a, #321414);
+    position: absolute;
+    z-index: -10;
+    transition: 0.5s;
+} 
+footer .footer_main .tag .social_link a:hover::after{
+    left: 0;
+}
+footer .footer_main .tag .search_bar{
+    width: 230px;
+    height: 30px;
+    background: rgb(202,202,202);
+    border-radius: 25px;
+}
+footer .footer_main .tag .search_bar input{
+   width: 200px;
+   padding: 2px 0;
+   position: relative;
+   top: 17% ; 
+   left: 6%;
+   border: none;
+   background: none;
+   outline: none;
+   font-size: 13px;
+}
+footer .footer_main .tag .search_bar button{
+    padding: 7px 15px;
+    background: linear-gradient(to right, #874a4a, #4f2929);
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
